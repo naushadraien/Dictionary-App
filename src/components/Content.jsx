@@ -27,7 +27,7 @@ const Content = ({ partOfSpeech, definitions }) => {
         setIsPlaying(false);
       };
     }
-  }, []);
+  }, [res]);
 
   return (
     <div>
@@ -41,9 +41,9 @@ const Content = ({ partOfSpeech, definitions }) => {
               {isPlaying ? <img src={Pause} alt="pause" /> : <img src={Play} alt="play" />}
             </button>
             <audio className="hidden" src={audioUrl} ref={ref} />
-            <h3>
-              {res.word}
-              <span className="block font-normal text-sm text-pink-600">
+            <h3 className="font-bold text-xl">
+              Word: {res.word}
+              <span className="block font-normal text-sm text-black">
                 {res.phonetic}
               </span>
             </h3>
