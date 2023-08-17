@@ -23,7 +23,7 @@ const Header = () => {
     <div className="relative">
     <nav className="my-2 h-14 flex items-center">
       <img src={Logo} alt="logo" width={63} height={63} />
-      <h2 className="text-black font-medium text-2xl leading-normal">Suvaye Official</h2>
+      <h2 className="text-black font-medium text-2xl leading-normal">Suvaye Dictionary</h2>
     </nav>
     <form onSubmit={handleSearch} className="relative">
       <button
