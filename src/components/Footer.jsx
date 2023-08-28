@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-sky-400 text-white text-center rounded-full w-full py-4 md:py-6">
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <Link to={'/details'}>
+        <Link to={"/details"}>
           <img
             src={Logo}
             alt="logo"
@@ -19,19 +19,17 @@ const Footer = () => {
             alt="twitter-icon"
             className="w-8 h-8 mb-2 bg-gray-200 rounded-md"
           />
-          <p className="text-2xl font-extrabold">suvaye.official</p>
-          </div>
-          <div className="md:block md:ml-10 md:mt-10">
+          <p className="text-2xl font-extrabold">WordSound Dict</p>
+        </div>
+        <div className="md:block md:ml-10 md:mt-10">
           <p className="text-lg">follow us on twitter for latest updates</p>
-          <Link to={'/'}>
+          <Link to={"/"}>
             <p className="text-lg font-bold">{`<< Go to Home`}</p>
           </Link>
-          </div>
-        
+        </div>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-
